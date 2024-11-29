@@ -1,0 +1,19 @@
+The separation between src and public folders follows a common frontend development pattern:
+
+public folder:
+
+Contains files that are served directly to the browser
+index.html is the entry point that users first access
+Files here are static and don't need processing
+src folder:
+
+Contains source code that may need processing/compilation
+styles.css might be preprocessed (like SASS to CSS)
+app.js might be bundled, minified, or transformed
+Source files that developers work with directly
+This structure helps organize:
+
+What the browser sees directly (public)
+What developers work on (src)
+What needs to be processed before production
+It's particularly useful when using build tools or when the project grows larger.
